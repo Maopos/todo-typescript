@@ -1,10 +1,11 @@
 import TodoProvider from "./context/TodoProvider";
 import TodoList from "./components/TodoList";
+import Title from "./components/Title";
 
 const Todo = () => {
   return (
     <TodoProvider>
-      <h3>Todo App</h3>
+      <Title />
       <TodoList />
     </TodoProvider>
   );

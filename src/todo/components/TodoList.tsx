@@ -1,13 +1,14 @@
-import { useContext } from "react";
-import { TodoContext } from "../context/TodoContext";
+/* import { useContext } from "react";
+import { TodoContext } from "../context/TodoContext"; */
 import TodoItem from "./TodoItem";
+import useTodos from "../hooks/useTodos";
 
 const TodoList = () => {
   // Context
-  const { TodoState } = useContext(TodoContext);
-  const { todos } = TodoState;
+  /* const { TodoState } = useContext(TodoContext);
+  const { todos } = TodoState; */
 
-  // console.log(todos);
+  const { todos } = useTodos();
 
   return (
     <div>
